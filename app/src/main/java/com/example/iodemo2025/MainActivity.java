@@ -1,13 +1,13 @@
-package com.example.appqualityinsightsqaapp;
+package com.example.iodemo2025;
 
-import static com.example.lib.JavaLibraryClass.createCrashInJavaLibrary;
-import static com.example.mylibrary.AndroidLibraryClass.createCrashInAndroidLibrary;
-import static com.google.play.dynamic.filters.opted.shared.Platform_androidKt.createCrashInKMPModule;
+//import static com.example.lib.JavaLibraryClass.createCrashInJavaLibrary;
+//import static com.example.mylibrary.AndroidLibraryClass.createCrashInAndroidLibrary;
+//import static com.google.play.dynamic.filters.opted.shared.Platform_androidKt.createCrashInKMPModule;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.appqualityinsightsqaapp.realcrash.RealCrashScenariosMainActivity;
+import com.example.iodemo2025.realcrash.RealCrashScenariosMainActivity;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,7 +19,7 @@ import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
-import com.example.appqualityinsightsqaapp.databinding.ActivityMainBinding;
+import com.example.iodemo2025.databinding.ActivityMainBinding;
 import com.google.firebase.crashlytics.CustomKeysAndValues;
 import com.google.firebase.crashlytics.FirebaseCrashlytics;
 
@@ -79,38 +79,38 @@ public class MainActivity extends AppCompatActivity {
         kmpCrash=findViewById(R.id.kmp_crash);
         realLifeCrashScenario = findViewById(R.id.real_life_crash_scenario);
 
-        andLibButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                createCrashInAndroidLibrary();
-            }
-        });
-
-        andLibButton2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                createCrashInAndroidLibrary();
-            }
-        });
-
-        javalibCrash.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                createCrashInAndroidLibrary();
-            }
-        });
-        javalibCrash.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                createCrashInJavaLibrary();
-            }
-        });
+//        andLibButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                createCrashInAndroidLibrary();
+//            }
+//        });
+//
+//        andLibButton2.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                createCrashInAndroidLibrary();
+//            }
+//        });
+//
+//        javalibCrash.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                createCrashInAndroidLibrary();
+//            }
+//        });
+//        javalibCrash.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                createCrashInJavaLibrary();
+//            }
+//        });
         realLifeCrashScenario.setOnClickListener(v -> {
             startActivity(new Intent(this, RealCrashScenariosMainActivity.class));
         });
-        kmpCrash.setOnClickListener(v -> {
-            createCrashInKMPModule();
-        });
+//        kmpCrash.setOnClickListener(v -> {
+//            createCrashInKMPModule();
+//        });
     }
 
     @Override

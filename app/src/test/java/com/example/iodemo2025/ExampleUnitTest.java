@@ -1,4 +1,4 @@
-package com.example.appqualityinsightsqaapp;
+package com.example.iodemo2025;
 
 import org.junit.Test;
 

@@ -1,9 +1,9 @@
-package com.example.appqualityinsightsqaapp.realcrash;
+package com.example.iodemo2025.realcrash;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.appqualityinsightsqaapp.R;
+import com.example.iodemo2025.R;
 
 public class IllegalFormatActivity extends AppCompatActivity {
 

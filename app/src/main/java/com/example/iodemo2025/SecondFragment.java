@@ -1,19 +1,18 @@
-package com.example.appqualityinsightsqaapp;
+package com.example.iodemo2025;
 
-import static com.example.lib.JavaLibraryClass.createCrashInJavaLibrary;
-import static com.example.mylibrary.AndroidLibraryClass.createCrashInAndroidLibrary;
+//import static com.example.lib.JavaLibraryClass.createCrashInJavaLibrary;
+//import static com.example.mylibrary.AndroidLibraryClass.createCrashInAndroidLibrary;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.appqualityinsightsqaapp.databinding.FragmentSecondBinding;
+import com.example.iodemo2025.databinding.FragmentSecondBinding;
 import com.google.firebase.crashlytics.CustomKeysAndValues;
 import com.google.firebase.crashlytics.FirebaseCrashlytics;
 
@@ -57,18 +56,18 @@ public class SecondFragment extends Fragment {
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });
-        binding.andLibCrash.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                createCrashInAndroidLibrary();
-            }
-        });
-        binding.javaLibCrash.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                createCrashInJavaLibrary();
-            }
-        });
+//        binding.andLibCrash.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                createCrashInAndroidLibrary();
+//            }
+//        });
+//        binding.javaLibCrash.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                createCrashInJavaLibrary();
+//            }
+//        });
     }
 
     @Override

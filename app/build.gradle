@@ -13,11 +13,11 @@ android {
 //            keyAlias 'key0'
         }
     }
-    namespace 'com.example.appqualityinsightsqaapp'
+    namespace 'com.example.iodemo2025'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.quality.appqualityinsightsqaapp"
+        applicationId "com.studio.iodemo2025"
         minSdk 27
         targetSdk 34
         versionCode 6

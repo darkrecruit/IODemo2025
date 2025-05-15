@@ -1,4 +1,4 @@
-package com.example.appqualityinsightsqaapp;
+package com.example.iodemo2025;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-import com.example.appqualityinsightsqaapp.databinding.FragmentFirstBinding;
+import com.example.iodemo2025.databinding.FragmentFirstBinding;
 
 public class FirstFragment extends Fragment {
 
